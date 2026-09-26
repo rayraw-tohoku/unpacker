@@ -23,9 +23,9 @@ CXXFLAGS	+= $(subst x86_64,-m64,$(findstring x86_64,$(shell uname -m)))
 CXXFLAGS	+= -ftree-vectorize
 
 ifeq ($(shell uname -m), aarch64)
-        CXXFLAGS        += -march=armv8-a+simd
+	CXXFLAGS	+= -march=armv8-a+simd
 else
-        CXXFLAGS        += -msse2
+	CXXFLAGS	+= -msse2
 endif
 
 #CXXFLAGS	+= -ftree-vectorizer-verbose=7
