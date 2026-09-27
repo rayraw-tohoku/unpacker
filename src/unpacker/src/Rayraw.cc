@@ -80,7 +80,7 @@ Rayraw::decode( void )
 	     << std::hex << *itr_body << std::dec
 	     << ")"
 	     << std::endl;
-	// Unpacker::dump_data(*this);
+	Unpacker::dump_data(*this);
       }
     } // data_type
   } //for(i)
